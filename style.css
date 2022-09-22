@@ -3,38 +3,27 @@ header {
     left: 0px;
     right: 0px;
     top: 0px;
-    bottom: 0px;
     width: 375px;
     height: 92px;
     background: #3C3A39;
 }
 
 #author-name {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 10px 12px;
     position: absolute;
     left: 12px;
     top: calc(50% - 44px/2);
-    width: 77px;
-    height: 24px;
+    width: 101px;
+    height: 44px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    text-align: center;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 #menu-icon {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 8px;
     position: absolute;
     width: 40px;
