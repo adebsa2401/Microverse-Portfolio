@@ -1,99 +1,99 @@
 header {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    width: 375px;
-    height: 92px;
-    background: #3C3A39;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 375px;
+  height: 92px;
+  background: #3c3a39;
 }
 
 #author-name {
-    padding: 10px 12px;
-    position: absolute;
-    left: 12px;
-    top: calc(50% - 44px/2);
-    width: 101px;
-    height: 44px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
+  padding: 10px 12px;
+  position: absolute;
+  left: 12px;
+  top: calc(50% - 44px / 2);
+  width: 101px;
+  height: 44px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
 }
 
 #icon-menu {
-    position: absolute;
-    right: 24px;
-    top: calc(50% - 40px/2);
+  position: absolute;
+  right: 24px;
+  top: calc(50% - 40px / 2);
 }
 
 #headline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 120px 24px;
-    gap: 12px;
-    position: absolute;
-    height: 590px;
-    left: 0px;
-    top: 92px;
-    background: #1C1A19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+  position: absolute;
+  height: 590px;
+  left: 0;
+  top: 92px;
+  background: #1c1a19;
 }
 
 h1 {
-    width: 327px;
-    height: 124px;
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: 0.37px;
-    color: #FF6B00;
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
 }
 
 h2 {
-    width: 327px;
-    height: 27px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: #FFF5E1;
+  width: 327px;
+  height: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
 }
 
 p {
-    width: 327px;
-    height: 123px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
+  width: 327px;
+  height: 123px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
 }
 
 #social-medias {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 200px;
-    height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 40px;
 }
 
 .icon {
-    padding: 8px;
-    width: 24px;
-    height: 24px;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
 }
 
 #backgroup-image {
-    position: absolute;
-    width: 150px;
-    height: 450px;
-    right: 0px;
-    bottom: 0px
+  position: absolute;
+  width: 150px;
+  height: 450px;
+  right: 0;
+  bottom: 0;
 }
