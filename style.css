@@ -139,12 +139,12 @@ hr {
 .project-card {
   display: grid;
   grid-template-areas:
-    'empty empty empty empty'
-    'empty empty empty empty'
-    'title title title title'
-    'title title title title'
-    'content content content content'
-    'content content content content',
+    'empty empty empty empty',
+    'empty empty empty empty',
+    'title title title title',
+    'title title title title',
+    '. . . .',
+    '. . . .',
     '. . . .',
     '. . . .';
   width: 87%;
@@ -179,9 +179,7 @@ hr {
 
 #empty {
   grid-area: empty;
-  background: #000;
-  /* width: 100px; */
-  /* height: 30px; */
+  background: black;
 }
 
 .card-title {
@@ -194,7 +192,9 @@ hr {
 }
 
 .card-content {
-  grid-area: content;
+  width: 295px;
+  height: 87px; 
+  font-family: 'Inter';
 }
 
 .project-detail-button {
