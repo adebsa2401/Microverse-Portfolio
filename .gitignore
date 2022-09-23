@@ -1,4 +1,5 @@
 node_modules/
+hint-report/
 .github
 .hintrc
 .stylelintrc.json
