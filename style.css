@@ -1,14 +1,14 @@
 header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  width: 375px;
   height: 92px;
   background: #3c3a39;
+  z-index: 1;
 }
 
-#author-name {
+#logo {
   padding: 10px 12px;
   position: absolute;
   left: 12px;
@@ -29,17 +29,26 @@ header {
   top: calc(50% - 40px / 2);
 }
 
+#main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 92px;
+  bottom: 0;
+}
+
 #headline {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 120px 24px;
   gap: 12px;
-  position: absolute;
   height: 590px;
-  left: 0;
-  top: 92px;
   background: #1c1a19;
+  background-image: url('assets/background-image.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 h1 {
@@ -90,10 +99,12 @@ p {
   height: 24px;
 }
 
-#backgroup-image {
-  position: absolute;
-  width: 150px;
-  height: 450px;
-  right: 0;
-  bottom: 0;
+.clickable:hover {
+  opacity: 0.5;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity;
+}
+
+a {
+  text-decoration: none;
 }
