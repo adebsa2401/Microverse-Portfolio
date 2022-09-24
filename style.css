@@ -43,14 +43,13 @@ header {
   gap: 12px;
   height: 590px;
   background: #1c1a19;
-  background-image: url('assets/background-image.png');
+  background-image: url('assets/headline-background.png');
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 h1 {
   font-family: 'Crete Round', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -60,7 +59,6 @@ h1 {
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -103,7 +101,6 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 120px 0;
-  position: absolute;
   left: 0;
   right: 0;
 }
@@ -156,11 +153,18 @@ img {
   background-size: cover;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  color: #fff;
+}
+
 .tags-list {
   display: flex;
   flex-direction: row;
   gap: 12px;
-  list-style: none;
   padding: 0;
   grid-area: tags;
 }
@@ -168,7 +172,6 @@ img {
 .tag {
   padding: 12px;
   background: #ffffff3d;
-  color: #fff;
 }
 
 .tag-1 {
@@ -208,4 +211,69 @@ img {
   line-height: 24px;
   color: #fff;
   border: none;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  background: #1c1a19;
+}
+
+#resume-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(assets/about-background.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 120px 24px 200px 24px;
+}
+
+#resume-button {
+  align-self: flex-start;
+}
+
+#about-hr {
+  border: 1px solid #fff;
+}
+
+#skills-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 24px 135px 24px;
+  gap: 32px;
+}
+
+.about-logo {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;
+}
+
+#languages-logo {
+  transform: rotate(45deg);
+}
+
+#skills-logo {
+  border-radius: 150px;
+}
+
+.skill-title-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#skill-title {
+  font-family: 'InaiMathi', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#skills-block li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
