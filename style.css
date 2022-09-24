@@ -13,11 +13,9 @@ header {
   position: absolute;
   left: 12px;
   top: calc(50% - 44px / 2);
-  width: 101px;
-  height: 44px;
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
@@ -38,7 +36,6 @@ header {
 }
 
 #headline {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,17 +43,14 @@ header {
   gap: 12px;
   height: 590px;
   background: #1c1a19;
-  background-image: url('assets/background-image.png');
+  background-image: url('assets/headline-background.png');
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 h1 {
-  width: 327px;
-  height: 124px;
   font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
@@ -64,22 +58,17 @@ h1 {
 }
 
 h2 {
-  width: 327px;
-  height: 27px;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
 }
 
 p {
-  width: 327px;
-  height: 123px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -89,8 +78,6 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 200px;
-  height: 40px;
 }
 
 .icon {
@@ -107,4 +94,186 @@ p {
 
 a {
   text-decoration: none;
+}
+
+#recent-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  left: 0;
+  right: 0;
+}
+
+.section-title {
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+hr {
+  width: 87%;
+  border: 1px solid #212121;
+  margin-bottom: 80px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-areas:
+    'title'
+    'content'
+    'tags'
+    'button';
+}
+
+.project-card-1 {
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "title title"
+    "content content"
+    "tags tags"
+    "button .";
+}
+
+img {
+  grid-area: img;
+}
+
+#projects-list {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 24px;
+}
+
+.card-body {
+  padding: 8px 16px;
+  background: url(assets/project-background-1.png);
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: #fff;
+}
+
+.tags-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 0;
+  grid-area: tags;
+}
+
+.tag {
+  padding: 12px;
+  background: #ffffff3d;
+}
+
+.tag-1 {
+  color: #000;
+  border: 1px solid #8993a4;
+  background: #fff;
+}
+
+.card-title {
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 0;
+  grid-area: title;
+}
+
+.card-title-1 {
+  color: #000;
+}
+
+.card-content {
+  font-family: 'Inter', sans-serif;
+  grid-area: content;
+}
+
+.card-content-1 {
+  color: #000;
+}
+
+.project-detail-button {
+  padding: 12px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  background: #1c1a19;
+}
+
+#resume-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(assets/about-background.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 120px 24px 200px 24px;
+}
+
+#resume-button {
+  align-self: flex-start;
+}
+
+#about-hr {
+  border: 1px solid #fff;
+}
+
+#skills-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 24px 135px 24px;
+  gap: 32px;
+}
+
+.about-logo {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+}
+
+#languages-logo {
+  transform: rotate(45deg);
+}
+
+#skills-logo {
+  border-radius: 150px;
+}
+
+.skill-title-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#skill-title {
+  font-family: 'InaiMathi', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#skills-block li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
 }
