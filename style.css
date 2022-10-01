@@ -425,6 +425,14 @@ input::placeholder {
     margin-bottom: 0;
   }
 
+  button {
+    transition: background-color 100ms;
+  }
+
+  button:hover {
+    background-color: #d38248;
+  }
+
   .project-card-1 {
     display: grid;
     column-gap: 24px;
@@ -435,6 +443,14 @@ input::placeholder {
       "img tags"
       "img button"
       "img .";
+  }
+
+  .project-card-1 img {
+    transition: scale 200ms;
+  }
+
+  .project-card-1 img:hover {
+    scale: 1.1;
   }
 
   .project-card-1 img {
@@ -458,8 +474,13 @@ input::placeholder {
     gap: 24px;
   }
 
+  .project-card {
+    transition: scale 200ms;
+  }
+
   .project-card:hover {
     background: url(assets/project-background-0.png);
+    scale: 1.1;
   }
 
   .project-card button {
