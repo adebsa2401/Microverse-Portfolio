@@ -398,10 +398,6 @@ input::placeholder {
     margin-top: 0;
   }
 
-  footer hr {
-    margin-bottom: 0;
-  }
-
   #headline .social-medias {
     flex-direction: column;
     order: 0;
@@ -426,7 +422,6 @@ input::placeholder {
   }
 
   hr {
-    flex-grow: 1;
     margin-bottom: 0;
   }
 
