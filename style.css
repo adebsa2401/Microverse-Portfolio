@@ -23,7 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
   top: 0;
-  height: 92px;
+  height: 48px;
   padding: 12px 24px;
   background: #3c3a39;
   z-index: 1;
@@ -88,12 +88,6 @@ p {
   height: 24px;
 }
 
-.clickable:hover {
-  opacity: 0.5;
-  transition-timing-function: ease-in-out;
-  transition-property: opacity;
-}
-
 a {
   text-decoration: none;
 }
@@ -118,11 +112,8 @@ hr {
 
 .project-card {
   display: grid;
-  grid-template-areas:
-    'title'
-    'content'
-    'tags'
-    'button';
+  background: linear-gradient(179.35deg, #26262600 0.85%, #262626e6 84%), url(assets/project-background-0.png);
+  background-size: 100% 100%;
 }
 
 .project-card-1 {
@@ -154,8 +145,6 @@ img {
 
 .card-body {
   padding: 8px 16px;
-  background: linear-gradient(179.35deg, #26262600 0.85%, #262626e6 84%), url(assets/project-background-0.png);
-  background-size: 100% 100%;
 }
 
 ul {
@@ -372,7 +361,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   header {
     padding: 24px 150px;
-    height: 32px;
+    height: 24px;
   }
 
   a.nav-menu {
@@ -406,6 +395,11 @@ input::placeholder {
 
   footer .social-medias {
     justify-content: center;
+    margin-top: 0;
+  }
+
+  footer hr {
+    margin-bottom: 0;
   }
 
   #headline .social-medias {
@@ -451,11 +445,6 @@ input::placeholder {
   .project-card-1 img {
     width: 100%;
     height: 100%;
-    transition: scale 200ms;
-  }
-
-  .project-card-1 img:hover {
-    scale: 1.1;
   }
 
   .project-card-1 button {
@@ -474,16 +463,16 @@ input::placeholder {
     gap: 24px;
   }
 
-  .card-body:hover {
+  .project-card:hover {
     background: url(assets/project-background-0.png);
   }
 
-  .project-card {
-    transition: scale 200ms;
+  .project-card button {
+    visibility: hidden;
   }
 
-  .project-card:hover {
-    scale: 1.1;
+  .project-card:hover button {
+    visibility: visible;
   }
 
   #resume-block {
@@ -521,7 +510,7 @@ input::placeholder {
     display: grid;
     gap: 24px;
     grid-template-columns: 1fr 1fr;
-    padding: 130px 142px;
+    padding: 130px 142px 0 142px;
     grid-template-areas:
       "foot-p form"
       "hr hr"
