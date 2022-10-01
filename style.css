@@ -446,16 +446,13 @@ input::placeholder {
   }
 
   .project-card-1 img {
+    width: 100%;
+    height: 100%;
     transition: scale 200ms;
   }
 
   .project-card-1 img:hover {
     scale: 1.1;
-  }
-
-  .project-card-1 img {
-    width: 100%;
-    height: 100%;
   }
 
   .project-card-1 button {
