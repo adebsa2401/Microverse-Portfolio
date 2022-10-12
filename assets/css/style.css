@@ -1,20 +1,14 @@
-@font-face {
-  font-family: 'Crete Round';
-  src: url(assets/Crete_Round/CreteRound-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url(assets/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url(assets/Poppins/Poppins-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
   margin: 0;
+}
+
+hr {
+  border: 1px solid #212121;
+  margin-bottom: 80px;
 }
 
 header {
@@ -45,7 +39,7 @@ header {
   padding: 120px 24px 175px 24px;
   gap: 12px;
   background: #1c1a19;
-  background-image: url('assets/headline-background.png');
+  background-image: url('../images/headline-background.png');
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -105,14 +99,9 @@ a {
   color: #1c1a19;
 }
 
-hr {
-  border: 1px solid #212121;
-  margin-bottom: 80px;
-}
-
 .project-card {
   display: grid;
-  background: linear-gradient(179.35deg, #26262600 0.85%, #262626e6 84%), url(assets/project-background-0.png);
+  background: linear-gradient(179.35deg, #26262600 0.85%, #262626e6 84%), url(../images/project-background-0.png);
   background-size: 100% 100%;
 }
 
@@ -217,7 +206,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(assets/about-background.png);
+  background: url(../images/about-background.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   padding: 120px 24px 200px 24px;
@@ -287,6 +276,13 @@ footer {
   padding: 120px 24px 0 24px;
 }
 
+footer hr {
+  width: 100%;
+  margin: 0 0 25px 0;
+  border: 1px solid #dfe1e6;
+  grid-area: hr;
+}
+
 footer p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -308,13 +304,6 @@ form {
 
 button[type="submit"] {
   align-self: center;
-}
-
-footer hr {
-  width: 100%;
-  margin: 0 0 25px 0;
-  border: 1px solid #dfe1e6;
-  grid-area: hr;
 }
 
 footer .social-medias {
@@ -387,7 +376,7 @@ input::placeholder {
     align-items: center;
     justify-content: flex-start;
     gap: 87px;
-    background-image: url(assets/headline-background-desktop.png);
+    background-image: url(../images/headline-background-desktop.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -476,7 +465,7 @@ input::placeholder {
   }
 
   .project-card:hover {
-    background: url(assets/project-background-0.png);
+    background: url(../images/project-background-0.png);
     scale: 1.1;
   }
 
@@ -491,7 +480,7 @@ input::placeholder {
   #resume-block {
     flex-direction: column;
     align-items: flex-start;
-    background: url(assets/about-background-desktop.png);
+    background: url(../images/about-background-desktop.png);
     background-position: right;
     background-repeat: no-repeat;
     padding: 130px 142px;
