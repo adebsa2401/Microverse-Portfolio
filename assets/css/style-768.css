@@ -1,0 +1,180 @@
+@media screen and (min-width: 768px) {
+  header {
+    padding: 24px 150px;
+    height: 24px;
+  }
+
+  a.nav-menu {
+    display: none;
+  }
+
+  ul.nav-menu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  ul.nav-menu li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  #headline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 87px;
+    background-image: url(../images/headline-background-desktop.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+
+  footer .social-medias {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  #headline .social-medias {
+    flex-direction: column;
+    order: 0;
+  }
+
+  #presentation-block {
+    width: 39%;
+    order: 1;
+  }
+
+  #recent-works {
+    padding: 130px 142px;
+  }
+
+  #recent-works > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 114px;
+  }
+
+  hr {
+    margin-bottom: 0;
+  }
+
+  button {
+    transition: background-color 100ms;
+  }
+
+  button:hover {
+    background-color: #d38248;
+  }
+
+  .project-card-1 {
+    display: grid;
+    column-gap: 24px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+      "img title"
+      "img content"
+      "img tags"
+      "img button"
+      "img .";
+  }
+
+  .project-card-1 img {
+    width: 100%;
+    height: 100%;
+    transition: scale 200ms;
+  }
+
+  .project-card-1 img:hover {
+    scale: 1.1;
+  }
+
+  .project-card-1 button {
+    width: 30%;
+  }
+
+  .project-card-1 h1 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  #projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .project-card {
+    transition: scale 200ms;
+  }
+
+  .project-card:hover {
+    scale: 1.1;
+  }
+
+  .project-card button {
+    visibility: hidden;
+  }
+
+  .project-card:hover button {
+    visibility: visible;
+  }
+
+  #resume-block {
+    flex-direction: column;
+    align-items: flex-start;
+    background: url(../images/about-background-desktop.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 130px 142px;
+  }
+
+  footer p {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: start;
+  }
+
+  #resume-block p {
+    width: 50%;
+  }
+
+  #skills-block {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 130px 142px;
+    gap: 176px;
+  }
+
+  #skills-block ul {
+    align-items: flex-start;
+  }
+
+  footer {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    padding: 130px 142px 0 142px;
+    grid-template-areas:
+      "foot-p form"
+      "hr hr"
+      "socials socials";
+  }
+
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
+  button[type="submit"] {
+    align-self: flex-start;
+  }
+}

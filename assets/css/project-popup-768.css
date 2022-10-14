@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+  .popup-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "title title"
+      "tags ."
+      "img p"
+      "img buttons";
+    margin: 112px 142px;
+  }
+
+  .title-div {
+    grid-area: title;
+  }
+
+  .popup-content .tags-list {
+    grid-area: tags;
+  }
+
+  .featured-image {
+    grid-area: img;
+    max-height: 448px;
+  }
+
+  .popup-content .card-content {
+    grid-area: p;
+  }
+
+  .buttons-div {
+    align-self: auto;
+    justify-content: flex-start;
+    height: max-content;
+    grid-area: buttons;
+  }
+}
