@@ -180,7 +180,9 @@
                 <input class="form-input" type="text" name="full_name" maxlength="30" placeholder="Full name" required>
                 <input class="form-input" type="email" name="email" placeholder="Email address" required>
                 <textarea class="form-input" name="comment" cols="30" rows="3" maxlength="500" placeholder="Enter text here" required></textarea>
-                <button type="submit">Get in touch</button>
+                <div id="submit-error-div">
+                    <button type="submit">Get in touch</button>
+                </div>
             </form>
 
             <hr/>
@@ -223,6 +225,7 @@
     <!-- scripts start -->
     <script src="assets/js/menu.js"></script>
     <script type="module" src="assets/js/projects.js"></script>
+    <script src="assets/js/validation.js"></script>
     <!-- scripts end -->
 </body>
 </html>
