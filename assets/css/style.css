@@ -336,6 +336,14 @@ textarea {
   padding: 12px;
 }
 
+.error-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f00;
+  margin-left: 10px;
+}
+
 ::placeholder {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
